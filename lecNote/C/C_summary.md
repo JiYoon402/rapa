@@ -1,16 +1,15 @@
 # C프로그래밍 (2024.05.27 - 05.29)
 ### **0. 차례**
->1) 환경설정(vs - vs code)
->2) 변수(int, long long, double, char, char*)   
->3) 연산자(산술%, 증간, 삼항, 논리, 비트, 할당)   
-    반복문(for, while, do~while)
->4) 조건문(if, switch)
->5) 함수(call by value vs call by reference)
->6) 배열: 동일 자료형의 집합
->7) 포인터: 변수의 주소값(reference)을 갖는 변수 `int*ptr=&a;`  
-    ?? : pointer is a value that contains address!
->   
->9) 구조체: 여러 자료형의 집합을 단일 타입으로 다루기   
+>ch1. 환경설정(vs - vs code)   
+>ch2. 변수(int, long long, double, char, char*)   
+>ch3. 연산자(산술%, 증간, 삼항, 논리, 비트, 할당)      
+     반복문(for, while, do~while)   
+>ch4. 조건문(if, switch)   
+>ch5. 함수(call by value vs call by reference)   
+>ch6. 배열: 동일 자료형의 집합   
+>ch7. 포인터: 변수의 주소값(reference)을 갖는 변수 `int*ptr=&a;`     
+    ?? : pointer is a value that contains address!   
+>ch8. 구조체: 여러 자료형의 집합을 단일 타입으로 다루기      
 <br/>
 
 
@@ -56,12 +55,15 @@ int *ptr=arr;
 ### 6. 구조체
 
 ```C
-typedef struct student{ //구조체 정의
+typedef struct Student{ //구조체 정의
     int num;    //학번(student 구조체 member)
     double grade;//학점
 
 }student;//별명
+
+student s;
+student *ptr=&s;
 ```
-- member에 접근시 `student.num`
-- pointer member에 접근시 `student->num`
+- member에 접근시 `s.num`
+- pointer member에 접근시 `ptr->num`
        
