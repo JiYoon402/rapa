@@ -9,8 +9,5 @@ int main(void){
     for(int idx=0;idx<3;idx++)
         printf("subway[%d]=%d\n",idx,subway[idx]);
 
-    int ele[3]={0,1,2};
 
-    for(int idx=0;idx<3;idx++)
-        printf("subway[%d]=%d\n",idx,ele[idx]);
 }
