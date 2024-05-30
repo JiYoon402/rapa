@@ -76,7 +76,7 @@ ex. yes24 베스트셀러 가져오기
   - `id()`:주소
   - `del`: 변수 삭제
   - `isinstance(변수,자료형))`: 변수가 자료형의 객체인지 판단
-
+ <br/>   
 
 ### 2.2 화면 I/O
 #### 2.2.1 Input
@@ -97,7 +97,8 @@ ex. yes24 베스트셀러 가져오기
   >a-1-b-2   
   >a: 1 b: 2   
   >a: 1 b: 2
-  
+ <br/>
+    
 ### 2.3 자료형    
 #### 2.3.1 숫자형
 - int, float
@@ -118,7 +119,8 @@ ex. yes24 베스트셀러 가져오기
       
   > string   
   > 줄변경가능
-   
+ <br/>
+    
 ### 2.4 문자열
 - 문자열 관련 함수
   - `len(str)`: 문자 갯수
@@ -132,7 +134,8 @@ ex. yes24 베스트셀러 가져오기
   - `.strip()`: 좌우 공백 제거 (lstrip(), rstrip(): l/r 공백만 제거)
   - `.replace(oldStr,newStr)`: oldStr을 newStr로 변경
   - `.split()`: space 단위로 분리하여 list로 반환,('-')단위 설정 가능
-
+ <br/>
+   
 ### 2.5 날짜   
   
   ```python   
@@ -141,6 +144,11 @@ ex. yes24 베스트셀러 가져오기
     print("{:%Y년 %m월 %d일 %H시 %M분}".format(now))   
   ```
    > 2024년 05월 30일 12시 48분
+ <br/>
+ 
+  - - -
+ <br/>   
+ 
 ## 3. 데이터 구조
 ### 3.1 list[]
 #### 3.1.1 list 조회
@@ -179,23 +187,25 @@ ex. yes24 베스트셀러 가져오기
 - `.remove(data)`: 해당 data 제거
 - `del list[i]`: i요소 제거
 - `pop()`: 가장 마지막 요소가 return되고 삭
-
+   
 #### 3.1.4 indexing
 - `index(val, 1)`: val을 1번 인덱스부터 찾아 그 위치를 반환
 - `count(val)`: val의 갯수 count
-
+   
 #### 3.1.5 원하는 내용만 추출
 - slicing: `list[from:to:step]`
 - comprehension: list=[val for val in numbers if (조건)]
 
 #### 3.1.6 list 복제
 - `list.copy()`: 주소 말고 요소 복제(깊은 복사)
-  
+
+     <br/>   
 ### 3.2 tuple()
 - 수정 안됨
 - 요소가 하나인 tuple은 뒤에 ','필수
 -`'~'.join(tuple)`: 요소 사이를 ~로 연결해서 문자열 반환
 
+   <br/>   
 ### 3.3 dictionary{key:value}
 - key 중복 불가, value 중복 가능
 - index를 이용한 참조 불가(key로 참조)
@@ -206,6 +216,7 @@ ex. yes24 베스트셀러 가져오기
 - 출력: `dic.keys()` `dic.values()` `dic.items()`
 - `in dic`: key를 나타냄
 
+   <br/>   
 ### 3.4 set{}
 - 중복 허용 X
 - 순서 없음 -> index 없음
