@@ -80,10 +80,10 @@ ex. yes24 베스트셀러 가져오기
 
 ### 2.2 화면 I/O
 #### 2.2.1 Input
-- `var=input('표시 문자열')
+- `var=input('표시 문자열')`
 #### 2.2.2 Output
-- `print( arg, sep=' ', end='\n')` # sep, end는 default 값 존재
-- `{[인덱스]:[공백대체문자][정렬방법][자릿수][타입]}".format(변수명,...)`
+ - `print( arg, sep=' ', end='\n')` # sep, end는 default 값 존재
+ - `{[인덱스]:[공백대체문자][정렬방법][자릿수][타입]}".format(변수명,...)`
   
   ```python
     a,b=1,2
@@ -101,15 +101,15 @@ ex. yes24 베스트셀러 가져오기
     
 ### 2.3 자료형    
 #### 2.3.1 숫자형
-- int, float
-- int/int=float
-- e로 지수 표현
+  - int, float
+  - int/int=float
+  - e로 지수 표현
 
     
 #### 2.3.2 문자형   
-- `text[from:to:step]`: 문자열 slicing
-- `text[-1]` : 음수 index는 뒤에서부터
-- `text[::-1]` : 음수 step은 역순
+  - `text[from:to:step]`: 문자열 slicing
+  - `text[-1]` : 음수 index는 뒤에서부터
+  - `text[::-1]` : 음수 step은 역순
    
    ```python
     text="""string
@@ -152,24 +152,24 @@ ex. yes24 베스트셀러 가져오기
 ## 3. 데이터 구조
 ### 3.1 list[]
 #### 3.1.1 list 조회
-- `list[1]=str`으로 수정
-- list 접근
-  ```python
-  fruits=['apple','mango''banana']
-  for fruit in fruits:
-    print(fruit)
-  
-  for idx, value in enumerate(fruits):#enumerate: i,list[i] 반환
-    print(idx, value)
-  ```
-  > apple   
-  > mango   
-  > banana   
-  > 0 apple   
-  > 1 mango   
-  > 3 banana
-- `len(list)`: 요소의 수
-- `min(list)` `max(list)`: 최소값,최대값
+  - `list[1]=str`으로 수정
+  - list 접근
+    ```python
+    fruits=['apple','mango''banana']
+    for fruit in fruits:
+      print(fruit)
+    
+    for idx, value in enumerate(fruits):#enumerate: i,list[i] 반환
+      print(idx, value)
+    ```
+    > apple   
+    > mango   
+    > banana   
+    > 0 apple   
+    > 1 mango   
+    > 3 banana
+  - `len(list)`: 요소의 수
+  - `min(list)` `max(list)`: 최소값,최대값
      
 #### 3.1.2 list 요소 추가
 - `list*n`: n만큼 반복
@@ -193,35 +193,37 @@ ex. yes24 베스트셀러 가져오기
 - `count(val)`: val의 갯수 count
    
 #### 3.1.5 원하는 내용만 추출
-- slicing: `list[from:to:step]`
-- comprehension: list=[val for val in numbers if (조건)]
+  - slicing: `list[from:to:step]`
+  - comprehension: list=[val for val in numbers if (조건)]
 
 #### 3.1.6 list 복제
 - `list.copy()`: 주소 말고 요소 복제(깊은 복사)
 
      <br/>   
 ### 3.2 tuple()
-- 수정 안됨
-- 요소가 하나인 tuple은 뒤에 ','필수
--`'~'.join(tuple)`: 요소 사이를 ~로 연결해서 문자열 반환
+  - 수정 안됨
+  - 요소가 하나인 tuple은 뒤에 ','필수
+  - `'~'.join(tuple)`: 요소 사이를 ~로 연결해서 문자열 반환
 
    <br/>   
-### 3.3 dictionary{key:value}
-- key 중복 불가, value 중복 가능
-- index를 이용한 참조 불가(key로 참조)
-- `dic['key']`: value 반환, key 없을시 error
-- `dic.get('key')`: value 반환, key 없을시 None 반환
-- 추가: `dic[newKey]=newValue`
-- 제거: `dic.pop(key)`
-- 출력: `dic.keys()` `dic.values()` `dic.items()`
-- `in dic`: key를 나타냄
+
+### 3.3 dictionary{ key : value }
+  - key 중복 불가, value 중복 가능
+  - index를 이용한 참조 불가(key로 참조)
+  - `dic['key']`: value 반환, key 없을시 error
+  - `dic.get('key')`: value 반환, key 없을시 None 반환
+  - 추가: `dic[newKey]=newValue`
+  - 제거: `dic.pop(key)`
+  - 출력: `dic.keys()` `dic.values()` `dic.items()`
+  - `in dic`: key를 나타냄
 
    <br/>   
+
 ### 3.4 set{}
-- 중복 허용 X
-- 순서 없음 -> index 없음
-- 추가: `set.add(val)`
-
+  - 중복 허용 X
+  - 순서 없음 -> index 없음
+  - 추가: `set.add(val)`
+  
 
 
 
