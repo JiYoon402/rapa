@@ -81,9 +81,11 @@ ex. yes24 베스트셀러 가져오기
 ### 2.2 화면 I/O
 #### 2.2.1 Input
 - `var=input('표시 문자열')`
+- +로 연결 가능 ex) input(a+'str')
 #### 2.2.2 Output
  - `print( arg, sep=' ', end='\n')` # sep, end는 default 값 존재
  - `{[인덱스]:[공백대체문자][정렬방법][자릿수][타입]}".format(변수명,...)`
+ - format은 print()내부에서만 사용 가능
   
   ```python
     a,b=1,2
@@ -152,6 +154,7 @@ ex. yes24 베스트셀러 가져오기
 ## 3. 데이터 구조
 ### 3.1 list[]
 #### 3.1.1 list 조회
+  - `list(range(from,to,step))`: from~to-1의 list생성
   - `list[1]=str`으로 수정
   - list 접근
     ```python
@@ -194,7 +197,7 @@ ex. yes24 베스트셀러 가져오기
    
 #### 3.1.5 원하는 내용만 추출
   - slicing: `list[from:to:step]`
-  - comprehension: list=[val for val in numbers if (조건)]
+  - comprehension: `list=[val for val in numbers if (조건)]`
 
 #### 3.1.6 list 복제
 - `list.copy()`: 주소 말고 요소 복제(깊은 복사)
@@ -223,6 +226,44 @@ ex. yes24 베스트셀러 가져오기
   - 중복 허용 X
   - 순서 없음 -> index 없음
   - 추가: `set.add(val)`
+ <br/>
+ 
+  - - -
+ <br/>  
+ 
+## 4. 제어문
+### 4.1 if
+```python
+if 조건:
+  문장1
+elif 조건:
+  문장
+else:
+  문장
+```
+<br/>
+
+### 4.2 for-in
+```python
+for 변수 in 나열이가능한자료형:
+    반복할 문장1
+    반복할 문장2
+    break;
+else: #break를 수행시 else 수행 안함
+    변수에 값이 할당되지 않은 경우 시행할 문장(선택사항)
+```
+<br/>
+
+### 4.3 while
+```python
+while 조건:
+    반복문장1
+    반복문장2
+else: # while문 내 break를 통해 빠져나올때는 수행X
+    조건이 거짓일 경우 한번 수행할 문장(선택사항)
+```
+<br/>
+
   
 
 
