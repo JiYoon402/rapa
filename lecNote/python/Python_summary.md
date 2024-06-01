@@ -256,7 +256,7 @@ else: #break를 수행시 else 수행 안함
 ```
 <br/>
 
-### 4.3 while
+### 4.3 whilewh
 ```python
 while 조건:
     반복문장1
@@ -279,9 +279,27 @@ def 함수명(순서>튜플(*)>키워드> 딕셔너리(**)):
 -  call by value: 인수가 스칼라(숫자, 문자 논리)일 경우 함수 내에서 주소 바뀜
 -  call by reference: 인수가 list,dictionary, set일 경우 함수 내에서 주소 유지
 
-### 5.2 매개변수
-  
+### 5.2 람다
+- 'lambda 변수: return값'
+- `map(lambda var:func,data[])`: func(data)의 list
+- `fiter(lamda var:조건,data[])`: 조건을 만족하는 data list
 
+<br/>
+
+## 6. 모듈과 패키지
+### 6.1 설치
+- "pip install 라이브러리명"
+- "conda install 라이브러리명"
+
+### 6.2 import
+```python
+import A #A모듈을 가져옴
+import A as B #A모듈을 B이름으로 가져옴
+from A import B #A모듈 안의 B함수 가져옴
+from A import B as C #A모듈 안의 B함수를 C이름으로 가져옴
+from A.B import C #A패키지 안의 B모듈의 C함수를 가져옴
+from A.B import C as D #A패키지 안의 B모듈의 C함수를 D이름으로 가져옴
+```
 
 
 
