@@ -256,7 +256,7 @@ else: #break를 수행시 else 수행 안함
 ```
 <br/>
 
-### 4.3 whilewh
+### 4.3 while
 ```python
 while 조건:
     반복문장1
