@@ -264,8 +264,11 @@ while 조건:
 else: # while문 내 break를 통해 빠져나올때는 수행X
     조건이 거짓일 경우 한번 수행할 문장(선택사항)
 ```
-<br/>
-
+ <br/>
+ 
+  - - -
+ <br/>  
+ 
 ## 5. 함수
 ### 5.1 함수의 정의 및 사용
 ```python
@@ -279,8 +282,57 @@ def 함수명(순서>튜플(*)>키워드> 딕셔너리(**)):
 -  call by value: 인수가 스칼라(숫자, 문자 논리)일 경우 함수 내에서 주소 바뀜
 -  call by reference: 인수가 list,dictionary, set일 경우 함수 내에서 주소 유지
 
-### 5.2 매개변수
-  
+### 5.2 람다
+- `lambda 변수: return값`
+- `map(lambda var:func,data[])`: func(data)의 list
+- `fiter(lamda var:조건,data[])`: 조건을 만족하는 data list
+ <br/>
+ 
+  - - -
+ <br/>  
+ 
+## 6. 모듈과 패키지
+### 6.1 설치
+- "pip install 라이브러리명"
+- "conda install 라이브러리명"
+
+### 6.2 import
+```python
+import A #A모듈을 가져옴
+import A as B #A모듈을 B이름으로 가져옴
+from A import B #A모듈 안의 B함수 가져옴
+from A import B as C #A모듈 안의 B함수를 C이름으로 가져옴
+from A.B import C #A패키지 안의 B모듈의 C함수를 가져옴
+from A.B import C as D #A패키지 안의 B모듈의 C함수를 D이름으로 가져옴
+```
+ <br/>   
+ 
+  - - -
+ <br/>  
+ 
+## 7. 객체지향 프로그래밍
+### 7.1 객체와 클래스
+  ```python
+  class Class_Name1(상속받을 클래스명):
+    def __init__(self,arg1,arg2):#초기화
+        self.arg1=arg1
+        self.arg2=arg2
+    def 함수(self): #함수 정의
+        문장
+    def __str__(self): #p1호출시 p1.__str__호출됨 => 원하는 출력 문자열로 설정
+        return "출력문장 {},{}".format(self.arg1,self.arg2)
+  ```
+ - `c1=Class('a','b')`   
+ - `print(c1)` : 출력문장 a, b
+   
+### 7.2 클래스 상속
+  ```python
+  class Class_Name2(Class_Name1):
+      def __init__(self,arg1,arg2,arg3):
+        super().__init__(arg1,arg2) #class1의 __init__함수에서 arg1,arg2상속
+        self.arg3=arg3 # 새로운 인수 초기화
+  ```
+      
 
 
 
