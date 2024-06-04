@@ -1,0 +1,20 @@
+- CSV
+name,age
+홍길동,20
+신길동,30
+
+- JSON
+{}
+
+
+
+
+- xml
+<data>
+    <name>홍길동</name>
+    <age>20</age>
+</data>
+<data>
+    <name>신길동</name>
+    <age>30</age>
+</data>
